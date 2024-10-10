@@ -12,4 +12,7 @@ dependencies = [
   'pytest-cov'
 ]
 [tool.pytest.ini_options]
-addopts = "--cov=olympics --cov=tests --cov-report=term-missing"
+testpaths = [
+  "tests",
+  "olympics",
+]
