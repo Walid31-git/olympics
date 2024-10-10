@@ -25,3 +25,13 @@ def test_medals():
     response = client.get('/medals/')
     assert response.status_code == 200
     assert len(response.json()) > 100
+    
+def test_top_countries():
+    response = client.get('/top-countries/')
+    assert response.status_code == 200
+    assert len(response.json()) >= 10
+    
+def test_collective_medals():
+    response = client.get('/collective-medals/')
+    assert response.status_code == 200
+    assert len(response.json()) >= 10

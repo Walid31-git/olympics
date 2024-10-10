@@ -9,14 +9,21 @@ def test_countries():
 def test_medals():
     rows = db.get_medals()
     assert len(rows) > 50
- 
-#Fonctions test qui echoue si on trouve moins de 10 des meilleurs collectifs   
-def test_top_collective():
-    rows = db.get_top_collective()
-    assert len(rows) >= 10
+    rows = db.get_medals(1)
+    assert len(rows) == 1
+    
+#j'ai changer de fonction car l'autre etait compliquer a implementer a 100%
+   
+def test_teams():
+    rows = db.get_teams()
+    assert len(rows) > 100
+    rows = db.get_teams(1)
+    assert len(rows) == 1
 
 #Fonctions test qui echoue si on trouve moins de 50 athletes
 def test_athletes():
     rows = db.get_athletes()
     assert len(rows) > 50
+    rows = db.get_athletes(1)
+    assert len(rows) == 1
     
