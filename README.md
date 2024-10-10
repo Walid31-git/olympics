@@ -278,3 +278,26 @@ méthodes pour s’assurer que le code suit toujours ces bonnes pratiques.
 
 Si vous avez des réponses à écrire, des remarques à faire sur votre travail,
 ajoutez-les à la fin de ce fichier.
+
+Monsieur je me suis endormi l'apres midi jai oublier de commit cle read me :( j'espere qu'il sera quand 
+meme pris en compte car je le finis a 00:40 ! 
+
+Question 7 : Le paramètre file permet de rediriger le contenu généré par la commande
+ vers un fichier spécifique. Avec la librairie rich et l'objet Console, il sert à enregistrer
+  ce qui est affiché, comme les tableaux (top_individual, top_collective, etc.). 
+  En gros, ce paramètre file dirige la sortie du tableau dans le fichier qu'on mentionne.
+
+
+Question 8 : Le commentaire # pragma: no cover dit à pytest d’ignorer certaines lignes pendant
+ le calcul de couverture. Même si ces lignes ne sont pas testées, elles ne seront pas comptées
+  comme non couvertes dans le résultat final.
+
+Question 9 : Même avec une couverture de test de 100%, ça ne garantit pas que le code est parfait
+ ou fonctionnera dans tous les cas. Il faut faire d'autres types de tests comme les tests de 
+ sécurité ou de performance pour vérifier que tout marche bien. 
+
+Question 10 : Écrire les tests dans un certain ordre permet de tester les parties les plus 
+importantes en premier. Par exemple, on commence par les tests de la base de données,
+ car si un bug s’y trouve, il pourrait affecter tout le reste du projet. Faire un commit qui 
+ contient à la fois la correction du bug et le test qui empêche son retour aide à mieux suivre 
+ les changements et à assurer qu’on ne revoit pas ce bug.
